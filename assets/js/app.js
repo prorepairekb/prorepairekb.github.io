@@ -90,6 +90,10 @@
     }
     if (u === "пог. м") return m.perimeter;
     if (u === "м³") return Math.round(m.area * 0.02 * 100) / 100;
+    if (u === "шт.") {
+      if (/створк|окон|окн/i.test(work.name)) return m.windows;
+      if (/двер/i.test(work.name)) return m.doors;
+    }
     return 1;
   }
 
@@ -169,7 +173,8 @@
       '<div><dt>Площадь пола</dt><dd>' + num(m.area) + ' м²</dd></div>' +
       '<div><dt>Площадь стен</dt><dd>' + num(m.walls) + ' м²</dd></div>' +
       '<div><dt>Периметр</dt><dd>' + num(m.perimeter) + ' пог. м</dd></div>' +
-      '<div><dt>Плинтус</dt><dd>' + num(m.plinth) + ' пог. м</dd></div>';
+      '<div><dt>Плинтус</dt><dd>' + num(m.plinth) + ' пог. м</dd></div>' +
+      '<div><dt>Двери / окна</dt><dd>' + num(m.doors) + ' / ' + num(m.windows) + ' шт.</dd></div>';
   }
 
   function renderRooms() {
@@ -190,6 +195,7 @@
             roomField("Двери, м²", "doorArea", r.doorArea, "number", "1,6") +
             roomField("Окна, м²", "winArea", r.winArea, "number", "2,4") +
             roomField("Дверей, шт.", "doorCount", r.doorCount, "number", "1") +
+            roomField("Окон, шт.", "winCount", r.winCount, "number", "1") +
             roomField("Ширина проёмов, м", "doorWidth", r.doorWidth, "number", "0,9") +
           '</div>' +
         '</div>';
