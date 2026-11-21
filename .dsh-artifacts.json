@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "artifacts": {
+    "github-fmz65g": {
+      "id": "github-fmz65g",
+      "title": "Связка с GitHub работает",
+      "kind": "html",
+      "createdAt": "2026-11-21T14:37:07.832Z",
+      "updatedAt": "2026-11-21T14:37:07.832Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "Тестовая страница на новом аккаунте прорепайр екб"
+    }
+  },
+  "tombstones": []
+}
