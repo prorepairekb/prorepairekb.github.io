@@ -1,6 +1,21 @@
 {
   "version": 1,
   "artifacts": {
+    "artifact-rh7m6y": {
+      "id": "artifact-rh7m6y",
+      "title": "Ремонт квартир под ключ — Курносов",
+      "kind": "html",
+      "createdAt": "2026-11-21T16:19:20.354Z",
+      "updatedAt": "2026-11-21T16:19:20.354Z",
+      "rev": 1,
+      "files": [
+        "assets/css/style.css",
+        "assets/js/app.js",
+        "assets/js/data.js",
+        "index.html"
+      ],
+      "description": "Сайт ремонта квартир под ключ: лендинг с интерактивным калькулятором сметы, формами заявки и замера"
+    },
     "github-fmz65g": {
       "id": "github-fmz65g",
       "title": "Связка с GitHub работает",
